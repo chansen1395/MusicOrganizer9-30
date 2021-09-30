@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Artist Record Details: </h1>
+
+<h2>@Model["record"].Description</h2>
+<h2>Redording Date: @Model["record"].Year</h2>
+<h3>Artist: @Model["artist"].ArtistName</h3>
+
+<a href='/artists/@Model["artist"].Id/records/new'>Add another record</a>
+<a href='/artists'>View all artists</a>
